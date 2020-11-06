@@ -11,7 +11,8 @@
         android:theme="@style/Theme.MiNuevaPart2">
         <activity android:name=".Comunicacion2"></activity>
         <activity android:name=".Comunicacion1" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
