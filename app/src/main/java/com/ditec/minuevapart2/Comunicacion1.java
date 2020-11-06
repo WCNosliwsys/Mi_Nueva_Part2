@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Comunicacion1 extends AppCompatActivity {
     EditText edtnombre;
@@ -19,11 +20,16 @@ public class Comunicacion1 extends AppCompatActivity {
         edtingresomes=findViewById(R.id.edtingresomes);
     }
     public void Verificar(View view){
-        Intent intent = new Intent(this, Comunicacion2.class);
-        intent.putExtra("nombre", edtnombre.getText().toString());
-        intent.putExtra("ingresomes", Integer.parseInt(edtingresomes.getText().toString()));
-        // startActivity(intent);
-        startActivityForResult(intent, 1234);
+        if (edtnombre.getText().toString().length() > 0 && edtingresomes.getText().toString().length() > 0) {
+            Intent intent = new Intent(this, Comunicacion2.class);
+
+            intent.putExtra("nombre", edtnombre.getText().toString());
+            intent.putExtra("ingresomes", Integer.parseInt(edtingresomes.getText().toString()));
+            // startActivity(intent);
+            startActivityForResult(intent, 1234);
+        }
+        else
+            Toast.makeText(this,"Debe ingresar un valor en el nombre y en el ingreso mensual",Toast.LENGTH_LONG).show();
     }
     @Override
     protected void onActivityResult(int requestCode,
