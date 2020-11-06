@@ -3,7 +3,8 @@
     package="com.ditec.minuevapart2">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiNuevaPart2">
-        <activity android:name=".Multimedia2"></activity>
+        <activity android:name=".Multimedia3"></activity>
+        <activity android:name=".Multimedia2" />
         <activity android:name=".Multimedia" />
         <activity android:name=".Intenciones" />
         <activity android:name=".Comunicacion3" />
