@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiNuevaPart2">
-        <activity android:name=".Multimedia"></activity>
+        <activity android:name=".Multimedia2"></activity>
+        <activity android:name=".Multimedia" />
         <activity android:name=".Intenciones" />
         <activity android:name=".Comunicacion3" />
         <activity android:name=".Comunicacion2" />
